@@ -1,0 +1,316 @@
+<!DO<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人自我介绍</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+        
+        header {
+            text-align: center;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .affiliation {
+            font-size: 1.2em;
+            color: #7f8c8d;
+        }
+        
+        section {
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #3498db;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        
+        h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .research-item, .award-item, .patent-item, .work-item {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #eee;
+        }
+        
+        .research-item:last-child, .award-item:last-child, .patent-item:last-child, .work-item:last-child {
+            border-bottom: none;
+        }
+        
+        .date {
+            color: #7f8c8d;
+            font-weight: bold;
+        }
+        
+        .institution {
+            font-style: italic;
+            color: #7f8c8d;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        /* 新增图标样式 */
+        .icon {
+            margin-right: 8px;
+            color: #3498db;
+        }
+        
+        .section-icon {
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+就       
+        .award-icon, .patent-icon, .research-icon, .interest-icon {
+            color: #3498db;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>马文轩</h1>
+            <div class="affiliation">人工智能与医学交叉学科学习与研究</div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📧</span>
+                    <span>生物医学与图像处理</span>
+                </div>
+                <div class="contact-item">
+                    <span>🌐</span>
+                    <span>3257295075@qq.com</span>
+                </div>
+                <div class="contact-item">
+                    <span>📍</span>
+                    <span>中国</span>                 
+                </div>
+            </div>
+        </header>                       
+
+        <section id="bio">
+            <h2><span class="section-icon">👤</span> 个人简介</h2>
+            <p>
+                主要研究方向为生物医学图像处理、人工智能图像处理和计算机辅助诊断。
+               
+            </p>
+        </section>
+
+        <section id="research-experience">
+            <h2><span class="section-icon">🔬</span> 科研经历</h2>
+          
+            
+            <div class="research-item">
+                <h3><span class="research-icon">🏙️</span> 国家自然科学基金委青年科学基金 - 高精度数值算法设计（学生身份参与）</h3>
+                <div class="date">deadline:2022-12</div>
+                <div class="institution">数理科学部</div>
+                <ul>
+                    <li>主要内容：血流动力学前处理求解器的设计与实现
+                        内容简介：现有的商业软件比如：ANSYS，COMSOL,openfoam软件以及开源工具箱：​ Python的的VTK库都无法直接对了复杂的血流动力学问题做到好的模拟，比如ansys以及consoml的求解器都
+                        封装的有限元算法，这会造成在前处理计算困难，需要的计算资源庞大同时网格划分艰难。同时老师们针对当时最流行LBM（格子玻尔兹曼方法）进行改进，由我对算法进行封装，实验证明，LBM
+                        方法网格划分简单快捷，易于求解等。具体请参考国家自然科学基金委青年科学基金结项书
+                    </li>    
+                    <li>本人实际贡献：算法封装，PDE数值算法推导以及完成三例测试用例（复杂几何问题：双心室，经典问题：方腔流问题，圆柱绕流问题）
+
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            <div class="research-item">
+                <h3><span class="research-icon">🎓</span> 毕业设计 - 基于多模态数据融合的双心室心肌病智能诊断系统的研究</h3>
+                <div class="date">2025.02 - 2025.05</div>
+                <div class="institution">评级：优秀</div>
+                <ul>
+                    近年来，随着机器学习、深度学习和医学影像技术的发展，心脏疾病的早期检测与风险预测取得了显著进展。本文以心脏病高发的双心室为例，提出基于多模态数据融合的双心室心肌病智能诊断系统，旨在提高诊断效率和改善患者预后。
+本文首先设计基于STM32F103ZET6和MAX30102的血氧心率采集器。通过优化低延时、低功耗和中断响应等设计，实现了数据的高效可靠采集、处理与上传，并可通过OLED显示屏实时显示生理参数。该设备体积小、无创、易用且便携，适用于日常健康监测。
+其次研究了一种改进型语义分割的神经网络架构，用于心室的影像学分割。本文采用结合DeepLabV3和UNet优点的网络架构，实现了心脏结构关键信息的有效提取。实验结果表明，该架构不仅具有高效性，提高了医学分割的准确性，而且将分割结果作为心脏形态学的评价指标。
+接着从心脏电固液耦合仿真的角度去分析心脏的时变特征。为此构建简化的心脏几何形状，通过COMSOL MultiPhysical软件进行多物理场模拟。实验结果说明这种耦合模型能够有效模拟心脏组织在电刺激下的机械响应和电生理行为。
+最后将上述部分整合为一个完整的系统，该系统不仅包括前端界面（Tkinter）、数据库（SQLite）和图像处理（OpenCV, TransDeeplib-UNet），还涵盖了基于深度学习的医学图像分割和XGBoost诊断模型。此外，系统还具有远程会诊功能，并能自动报告生成。整个系统的模块化设计使得各个功能可以独立开发和升级，同时又能协同工作，形成完整的诊断流程。
+综上所述，本研究融合机器学习、特征工程及先进的Transformer与UNet网络，提升医学图像分割性能，并采用高灵敏度单片机系统进行数据采集、处理与上传，最后通过知识图谱的方式完成自动化给药功能，由此实现了基于多模态数据融合的双心室心肌病诊断系统。本研究不仅促进了个性化医疗的发展，也为跨学科合作提供了新思路，有助于开发更加智能化、个性化的健康管理系统。
+                </ul>
+            </div>
+            
+            <div class="research-item">
+                <h3><span class="research-icon">🧬</span> 跨模态视觉分割与数据驱动下血流动力学预测的统一框架</h3>
+                <div class="date">2025.06 - 至今</div>
+                <div class="institution"></div>
+                <ul>
+                    <li>构建了融合CT、MRI多模态医学影像的统一分割框架</li>
+                    <li>开发了基于物理约束的数据驱动血流动力学预测模型</li>
+                    <li>研究成果将应用于心血管疾病诊断辅助系统，准确率提升</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="awards">
+            <h2><span class="section-icon">🏆</span>部分学科竞赛获奖</h2>
+            <div class="award-item">
+                <h3><span class="award-icon">🥇</span> 全国大学生数学竞赛（非数学A类）一等奖</h3>
+                <div class="date">2023年</div>
+                <div class="institution">中国数学会</div>
+                 <div class="corperation">独立完成</div>
+                <p>工科数学全部内容</p>
+            </div>
+            
+            <div class="award-item">
+                <h3><span class="award-icon">🥈</span>全国大学生数学竞赛数学类二等奖</h3>
+                <div class="date">2024年</div>
+                <div class="institution">中国数学会</div>
+                <div class="corperation">独立完成</div>
+                <p>数学分析，高等代数，解析几何</p>
+            </div>
+            
+            <div class="award-item">
+                <h3><span class="award-icon">🥉</span> 亚太地区计算机视觉图像增强赛道优胜奖</h3>
+                <div class="date">2024年</div>
+                <div class="institution">北京图像图像学会</div>
+                <div class="corperation">北京航空航天大学 陈希冉</div>
+                <p>prblem Image Enhancement in Underwater </p>
+            </div>
+             <div class="award-item">
+                <h3><span class="award-icon">🥉</span> 高教社杯全国大学生数学建模竞赛二等奖</h3>
+                <div class="date">2023年</div>
+                <div class="institution">中国工业与应用数学学会</div>
+                <div class="corperation">本校同学 黄奕凡，孔令势</div>
+                <p>B题。基于计算几何的船舶测线设计</p>
+            </div>
+             <div class="award-item">
+                <h3><span class="award-icon">🥉</span> 中国高校计算机大赛AIGC创新赛华中赛区三等奖</h3>
+                <div class="date">2025年</div>
+                <div class="institution">南开大学，vivo公司举办</div>
+                <div class="corperation">个人完成</div>
+                <p>基于多模态数据融合的智能手术平台</p>
+            </div>
+             <div class="award-item">
+                <h3><span class="award-icon">🥉</span> 美国大学生数学建模竞赛MCM（H奖）国际二等奖</h3>
+                <div class="date">2024年</div>
+                <div class="institution">MCM</div>
+                <p>problem A</p>
+            </div>
+        </section>
+
+        <section id="ipr">
+            <h2><span class="section-icon">📜</span> 专利与软件著作权</h2>
+            <div class="patent-item">
+                <h3><span class="patent-icon">🧠</span> 基于多模态数据融合的双心室心肌病智能诊断系统v1.0</h3>
+                <div class="date">登记号：匿名| 授权日期：2025年5月8日</div>
+                <div class="institution">发明人：马文轩</div>
+            </div>
+            
+            <div class="patent-item">
+                <h3><span class="patent-icon">🤖</span> 跨模态视觉分割与数据驱动的血流动力学预测的统一生成框架</h3>
+                <div class="date">专利号：实审中| 登记日期：2025年7月18日</div>
+                <div class="institution">发明人：马文轩，凌广明</div>
+            </div>
+            
+            
+        </section>
+
+        <section id="research-interests">
+            <h2><span class="section-icon">🔍</span> 研究方向</h2>
+            <ul>
+                <li><span class="interest-icon">🧬</span> <strong>深度学习与神经网络：</strong>注意力机制改进</li>
+                <li><span class="interest-icon">📝</span> <strong>数据驱动下的生物力学预测</strong>PINN，但是经常是借助Comsol等工程软件进行仿真</li>
+                <li><span class="interest-icon">👁️</span> <strong>计算机视觉：</strong>多模态医学图像分割，3Dslicer三维重建，开发3Dslicer模型插件、传统的目标检测（YOLO）</li>
+                <li><span class="interest-icon">🎯</span> <strong>医学病例生成式技术：</strong>主要是生成对抗网络与变分自编码器，同时也采用大模型微调与多智能体协同</li>
+                <li><span class="interest-icon">💾</span> <strong>生理信号EEG,ECG信号大数据分析：</strong>RNN,LSTM</li>
+              
+            </ul>
+        </section>
+
+        <section id="recent-work">
+            <h2><span class="section-icon">📰</span> 最新工作动态</h2>
+            <div class="work-item">
+                <h3><span class="research-icon">📤</span> 在投论文</h3>
+                <p>在投IEEE会议一篇，CCF-B类会议一篇</p>
+            </div>
+            
+            <div class="work-item">
+                <h3><span class="research-icon">📄</span> 近期发表</h3>
+                
+            </div>
+            
+            <div class="work-item">
+                <h3><span class="research-icon">👨‍🏫</span> 学术进展</h3>
+                <p>暂无</p>
+            </div>
+            
+            <div class="work-item">
+                <h3><span class="research-icon">📈</span> 项目进展</h3>
+                <p>服务于校企学科竞赛A类，专利软著以及学术论文</p>
+                <p>暂无</p>
+            </div>
+            
+            <div class="work-item">
+                <h3><span class="research-icon">👥</span> 团队建设</h3>
+                <p>团队目前有本科生3人，其中。李xx来自于哈尔滨工业大学数学学院，王xx来自于华中科技大学人工智能与自动化学院，张xx来自于西北工业大学航空学院
+                    硕士研究生6人，专业主要是人工智能，生物医学工程，计算数学，机器视觉。
+                    第三方认证：郭x，来自于北京协和医学院（清华大学医学部），在读医学博士一年级。专业方向：心内科
+                </p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

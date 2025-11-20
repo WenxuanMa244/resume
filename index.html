@@ -1,4 +1,4 @@
-<!DO<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
@@ -111,10 +111,36 @@
             margin-right: 10px;
             font-size: 1.2em;
         }
-就       
+        
         .award-icon, .patent-icon, .research-icon, .interest-icon {
             color: #3498db;
             font-weight: bold;
+        }
+        
+        /* 超链接样式优化 */
+        a.demo-link {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 2px;
+            transition: all 0.3s ease;
+        }
+        
+        a.demo-link:hover {
+            color: #2980b9;
+            border-bottom-color: #2980b9;
+            background-color: #f1f9ff;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        
+        /* 待上传提示样式 */
+        .pending-link {
+            color: #7f8c8d;
+            font-weight: 500;
+            margin-top: 8px;
+            display: inline-block;
         }
         
         @media (max-width: 768px) {
@@ -183,12 +209,17 @@
                 <div class="date">2025.02 - 2025.05</div>
                 <div class="institution">评级：优秀</div>
                 <ul>
-                    近年来，随着机器学习、深度学习和医学影像技术的发展，心脏疾病的早期检测与风险预测取得了显著进展。本文以心脏病高发的双心室为例，提出基于多模态数据融合的双心室心肌病智能诊断系统，旨在提高诊断效率和改善患者预后。
+                    <li>近年来，随着机器学习、深度学习和医学影像技术的发展，心脏疾病的早期检测与风险预测取得了显著进展。本文以心脏病高发的双心室为例，提出基于多模态数据融合的双心室心肌病智能诊断系统，旨在提高诊断效率和改善患者预后。
 本文首先设计基于STM32F103ZET6和MAX30102的血氧心率采集器。通过优化低延时、低功耗和中断响应等设计，实现了数据的高效可靠采集、处理与上传，并可通过OLED显示屏实时显示生理参数。该设备体积小、无创、易用且便携，适用于日常健康监测。
 其次研究了一种改进型语义分割的神经网络架构，用于心室的影像学分割。本文采用结合DeepLabV3和UNet优点的网络架构，实现了心脏结构关键信息的有效提取。实验结果表明，该架构不仅具有高效性，提高了医学分割的准确性，而且将分割结果作为心脏形态学的评价指标。
 接着从心脏电固液耦合仿真的角度去分析心脏的时变特征。为此构建简化的心脏几何形状，通过COMSOL MultiPhysical软件进行多物理场模拟。实验结果说明这种耦合模型能够有效模拟心脏组织在电刺激下的机械响应和电生理行为。
 最后将上述部分整合为一个完整的系统，该系统不仅包括前端界面（Tkinter）、数据库（SQLite）和图像处理（OpenCV, TransDeeplib-UNet），还涵盖了基于深度学习的医学图像分割和XGBoost诊断模型。此外，系统还具有远程会诊功能，并能自动报告生成。整个系统的模块化设计使得各个功能可以独立开发和升级，同时又能协同工作，形成完整的诊断流程。
 综上所述，本研究融合机器学习、特征工程及先进的Transformer与UNet网络，提升医学图像分割性能，并采用高灵敏度单片机系统进行数据采集、处理与上传，最后通过知识图谱的方式完成自动化给药功能，由此实现了基于多模态数据融合的双心室心肌病诊断系统。本研究不仅促进了个性化医疗的发展，也为跨学科合作提供了新思路，有助于开发更加智能化、个性化的健康管理系统。
+<br><br>
+📌 查看毕业论文Demo：<a href="https://share.weiyun.com/PMXXPoNN" class="demo-link" target="_blank">双心室心肌病智能诊断系统Demo演示</a>
+<br>
+<span class="pending-link">📄 毕业论文链接：（待毕业一年之后上传）</span>
+                    </li>
                 </ul>
             </div>
             
@@ -305,7 +336,7 @@
             
             <div class="work-item">
                 <h3><span class="research-icon">👥</span> 团队建设</h3>
-                <p>团队目前有本科生3人，其中。李xx来自于哈尔滨工业大学数学学院，王xx来自于华中科技大学人工智能与自动化学院，张xx来自于西北工业大学航空学院
+                <p>团队目前有本科生4人，其中。李xx来自于哈尔滨工业大学数学学院（数计强基），王xx来自于华中科技大学人工智能与自动化学院，张xx来自于西北工业大学航空学院，谭xx来自浙江大学
                     硕士研究生6人，专业主要是人工智能，生物医学工程，计算数学，机器视觉。
                     第三方认证：郭x，来自于北京协和医学院（清华大学医学部），在读医学博士一年级。专业方向：心内科
                 </p>
